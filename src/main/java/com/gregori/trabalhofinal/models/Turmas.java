@@ -24,6 +24,12 @@ public class Turmas implements Serializable {
     private Long id;
     private String descricao;
 
+    @OneToOne
+    private Agenda age;
+    
+    @OneToOne
+    private Fases fase;
+    
     public Agenda getAge() {
         return age;
     }
@@ -40,12 +46,6 @@ public class Turmas implements Serializable {
         this.fase = fase;
     }
     
-    @OneToOne
-    private Agenda age;
-    
-    @OneToOne
-    private Fases fase;
-
     public String getDescricao() {
         return descricao;
     }

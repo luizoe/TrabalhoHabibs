@@ -22,6 +22,7 @@ public class RepositoryConfig extends RepositoryRestMvcConfiguration {
         config.exposeIdsFor(Agenda.class,
                             Coordenador.class,
                             Disciplinas.class,
+                            Fases.class,
                             Professor.class,
                             Turmas.class);
     }
